@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magnify Music and Art Centre — Kajang</title>
+<meta name="description" content="Magnify Music and Art Centre in Kajang, Selangor — piano, guitar, ukulele, violin, cello, vocal, and art & craft lessons. Music room, recital space, and grand piano rental.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#home" class="logo"><img src="assets/logo.png" alt="Magnify Music and Art Centre"></a>
+    <nav>
+      <ul class="nav-links" id="navLinks"></ul>
+    </nav>
+    <a href="#contact" class="nav-cta">Enrol Now</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <svg class="hero-staff-bg" id="heroStaffBg" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div class="container">
+      <div class="hero-inner">
+        <p class="eyebrow" id="heroEyebrow"></p>
+        <h1 id="heroHeadline"></h1>
+        <p id="heroSub"></p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" id="heroCtaPrimary"></a>
+          <a href="#courses" class="btn btn-secondary" id="heroCtaSecondary"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="staff-divider" id="divider1"></svg>
+
+  <!-- COURSES -->
+  <section id="courses">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">What we teach</p>
+        <h2>Courses</h2>
+        <p>Every course is taught one-on-one, paced to the student in front of us.</p>
+      </div>
+      <div class="course-staff-wrap">
+        <div class="course-grid" id="courseGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="staff-divider" id="divider2"></svg>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Beyond lessons</p>
+        <h2>Services &amp; Rentals</h2>
+        <p>Spaces and instruments available to students, performers, and the wider community.</p>
+      </div>
+      <div class="service-grid" id="serviceGrid"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <p class="eyebrow">Who we are</p>
+          <h2 id="aboutHeading"></h2>
+          <div id="aboutBody" style="margin-top: 18px;"></div>
+        </div>
+        <div class="about-figure">
+          <svg class="staff-divider" id="aboutStaff"></svg>
+          <p style="margin-top: 18px;" id="footerNoteInAbout"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="staff-divider" id="divider3"></svg>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Reach us</p>
+        <h2 id="contactHeading"></h2>
+        <p id="contactSub"></p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-details">
+          <div class="contact-row">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value"><a id="contactPhone" href="#"></a></span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Email</span>
+            <span class="contact-value"><a id="contactEmail" href="#"></a></span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Address</span>
+            <span class="contact-value" id="contactAddress"></span>
+          </div>
+          <div class="social-row" id="socialRow"></div>
+          <div class="map-frame">
+            <iframe id="mapFrame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map to Magnify Music and Art Centre"></iframe>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <!--
+            This form uses Web3Forms (free) to email submissions to you.
+            See SETUP-INSTRUCTIONS.md for the one-time step to activate it.
+          -->
+          <input type="hidden" name="access_key" value="REPLACE_WITH_YOUR_WEB3FORMS_KEY">
+          <input type="hidden" name="subject" id="formSubjectField">
+          <div>
+            <label for="fName">Name</label>
+            <input type="text" id="fName" name="name" required>
+          </div>
+          <div>
+            <label for="fEmail">Email</label>
+            <input type="email" id="fEmail" name="email" required>
+          </div>
+          <div>
+            <label for="fPhone">Phone (optional)</label>
+            <input type="text" id="fPhone" name="phone">
+          </div>
+          <div>
+            <label for="fMessage">Message</label>
+            <textarea id="fMessage" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <svg class="staff-divider" id="footerDivider"></svg>
+  <p class="footer-note" id="footerNote"></p>
+  <p class="footer-copyright" id="footerCopyright"></p>
+</footer>
+
+<script src="content.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
