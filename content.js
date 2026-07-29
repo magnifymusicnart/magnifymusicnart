@@ -15,7 +15,7 @@ const SITE_CONTENT = {
 
   business: {
     name: "Magnify Music and Art Centre",
-    shortName: "Magnify",
+    shortName: "Magnify Music and Art Centre",
     tagline: "Music and art lessons in Kajang — piano, strings, voice, guitar, ukulele, and creative art classes for all ages.",
     email: "magnifymusicnart@gmail.com",
     phone: "011-2675 6780",
@@ -118,6 +118,6 @@ const SITE_CONTENT = {
   ],
 
   footer: {
-    note: "Piano · Guitar · Ukulele · Violin · Cello · Vocal · Art & Craft"
+    note: "Magnify the Journey, Discover the Magnificent"
   }
 };
